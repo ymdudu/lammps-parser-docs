@@ -1,0 +1,1049 @@
+<!-- -*- mode: jinja2 -*- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="The project "lammps-parser" is a series of Fortran modules consisting of fundamental classes and routines, designed for parsing dump files and performing basic calculations.">
+    <meta name="author" content="YiMing Du" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>BaseFrame &ndash; lammps-parser</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
+    <link href="../css/local.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <script src="../js/svg-pan-zoom.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="container-fluid mb-sm-4 mb-xl-2">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">lammps-parser </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar"
+                  aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/modules.html">Modules</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/procedures.html">Procedures</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lists/types.html">Derived Types</a>
+                </li>
+            </ul>
+              <div class="d-flex align-items-end flex-grow-1">
+                <form action="../search.html" role="search" class="ms-auto">
+                  <input type="text" class="form-control" aria-label="Search" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
+                </form>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+  <div class="row">
+    <h1>BaseFrame
+      <small>Module</small>
+      
+    </h1>
+      <div class="container p-2 mb-4 bg-light border rounded-3">
+    <div class="row align-items-center justify-content-between" id="info-bar">
+      <div class="col">
+        <ul class="list-inline" style="margin-bottom:0px;display:inline">
+
+            <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
+              <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+                 title="16.0% of total for modules and submodules.">202 statements</a>
+            </li>
+
+        </ul>
+      </div>
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-end mb-0">
+            <li class="breadcrumb-item active" aria-current="page">BaseFrame</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
+  </script>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+        <div id="sidebar">
+      <h3>Contents</h3>
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/baseframe.html#variable-default_rmax">default_rmax</a>
+            <a class="list-group-item" href="../module/baseframe.html#variable-default_nr">default_nr</a>
+            <a class="list-group-item" href="../module/baseframe.html#variable-default_ntheta">default_ntheta</a>
+            <a class="list-group-item" href="../module/baseframe.html#variable-default_nphi">default_nphi</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#inters-0"
+         aria-expanded="false" aria-controls="inters-0">
+         <h4 class="card-header bg-primary text-white">Interfaces</h4>
+      </a>
+      <div id="inters-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/baseframe.html#interface-read_voroindex">read_voroindex</a>
+        </div>
+      </div>
+    </div>
+
+  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#types-0"
+         aria-expanded="false" aria-controls="types-0">
+         <h4 class="card-header bg-primary text-white">Derived Types</h4>
+      </a>
+      <div id="types-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../module/baseframe.html#type-baseframehandler">BaseFrameHandler</a>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  </div>
+
+    </div>
+
+    <div class="col-md-9" id='text'>
+      <p>A module for an individual BaseFrame information, containing Base, Box, Atomics, e.t.c.</p>
+<br>          <div class="card mb-4">
+      <h3 class="card-header card-title bg-light">Uses</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href='atomics.html'>Atomics</a></li>
+                  <li class="list-inline-item"><a href='voro.html'>Voro</a></li>
+                  <li class="list-inline-item"><a href='base.html'>Base</a></li>
+                  <li class="list-inline-item"><a href='box.html'>Box</a></li>
+                  <li class="list-inline-item"><a href='http://fortranwiki.org/fortran/show/iso_fortran_env'>iso_fortran_env</a></li>
+                  <li class="list-inline-item"><a href='bondings.html'>Bondings</a></li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~baseframe~~UsesGraph Pages: 1 -->
+<svg id="modulebaseframeUsesGraph" width="400pt" height="270pt"
+ viewBox="0.00 0.00 400.00 269.58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~baseframe~~UsesGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 265.58)">
+<title>module~~baseframe~~UsesGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-265.58 396,-265.58 396,4 -4,4"/>
+<!-- module~baseframe -->
+<g id="module~~baseframe~~UsesGraph_node1" class="node">
+<title>module~baseframe</title>
+<polygon fill="none" stroke="black" points="392,-126 319,-126 319,-102 392,-102 392,-126"/>
+<text text-anchor="middle" x="355.5" y="-111.6" font-family="Helvetica,sans-Serif" font-size="10.50">BaseFrame</text>
+</g>
+<!-- iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_node2" class="node">
+<title>iso_fortran_env</title>
+<g id="a_module~~baseframe~~UsesGraph_node2"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="94,-147 0,-147 0,-123 94,-123 94,-147"/>
+<text text-anchor="middle" x="47" y="-132.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge1" class="edge">
+<title>module~baseframe&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M347.57,-126.19C324.9,-164.3 249.38,-277.54 162,-259"/>
+</g>
+<!-- module~atomics -->
+<g id="module~~baseframe~~UsesGraph_node3" class="node">
+<title>module~atomics</title>
+<g id="a_module~~baseframe~~UsesGraph_node3"><a xlink:href="../module/atomics.html" xlink:title="Atomics">
+<polygon fill="#337ab7" stroke="#337ab7" points="283,-189 228,-189 228,-165 283,-165 283,-189"/>
+<text text-anchor="middle" x="255.5" y="-174.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Atomics</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;module~atomics -->
+<g id="module~~baseframe~~UsesGraph_edge2" class="edge">
+<title>module~baseframe&#45;&gt;module~atomics</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M335.6,-126.15C320.96,-135.56 300.47,-148.74 284,-159.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="281.86,-156.54 275.34,-164.89 285.64,-162.43 281.86,-156.54"/>
+</g>
+<!-- module~base -->
+<g id="module~~baseframe~~UsesGraph_node4" class="node">
+<title>module~base</title>
+<g id="a_module~~baseframe~~UsesGraph_node4"><a xlink:href="../module/base.html" xlink:title="Base">
+<polygon fill="#337ab7" stroke="#337ab7" points="282.5,-146 228.5,-146 228.5,-122 282.5,-122 282.5,-146"/>
+<text text-anchor="middle" x="255.5" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Base</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;module~base -->
+<g id="module~~baseframe~~UsesGraph_edge3" class="edge">
+<title>module~baseframe&#45;&gt;module~base</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M318.84,-121.28C310.36,-123.01 301.3,-124.86 292.79,-126.59"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="291.86,-123.21 282.76,-128.64 293.26,-130.07 291.86,-123.21"/>
+</g>
+<!-- module~bondings -->
+<g id="module~~baseframe~~UsesGraph_node5" class="node">
+<title>module~bondings</title>
+<g id="a_module~~baseframe~~UsesGraph_node5"><a xlink:href="../module/bondings.html" xlink:title="Bondings">
+<polygon fill="#337ab7" stroke="#337ab7" points="192,-105 130,-105 130,-81 192,-81 192,-105"/>
+<text text-anchor="middle" x="161" y="-90.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Bondings</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;module~bondings -->
+<g id="module~~baseframe~~UsesGraph_edge4" class="edge">
+<title>module~baseframe&#45;&gt;module~bondings</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M318.74,-110.1C285.73,-106.5 236.76,-101.16 202.36,-97.4"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="202.51,-93.9 192.19,-96.29 201.75,-100.86 202.51,-93.9"/>
+</g>
+<!-- module~box -->
+<g id="module~~baseframe~~UsesGraph_node6" class="node">
+<title>module~box</title>
+<g id="a_module~~baseframe~~UsesGraph_node6"><a xlink:href="../module/box.html" xlink:title="Box">
+<polygon fill="#337ab7" stroke="#337ab7" points="282.5,-66 228.5,-66 228.5,-42 282.5,-42 282.5,-66"/>
+<text text-anchor="middle" x="255.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Box</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;module~box -->
+<g id="module~~baseframe~~UsesGraph_edge5" class="edge">
+<title>module~baseframe&#45;&gt;module~box</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M334.67,-101.86C320.46,-93.16 301.09,-81.3 285.2,-71.57"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="286.66,-68.36 276.3,-66.12 283,-74.33 286.66,-68.36"/>
+</g>
+<!-- module~voro -->
+<g id="module~~baseframe~~UsesGraph_node7" class="node">
+<title>module~voro</title>
+<g id="a_module~~baseframe~~UsesGraph_node7"><a xlink:href="../module/voro.html" xlink:title="Voro">
+<polygon fill="#337ab7" stroke="#337ab7" points="282.5,-24 228.5,-24 228.5,0 282.5,0 282.5,-24"/>
+<text text-anchor="middle" x="255.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Voro</text>
+</a>
+</g>
+</g>
+<!-- module~baseframe&#45;&gt;module~voro -->
+<g id="module~~baseframe~~UsesGraph_edge6" class="edge">
+<title>module~baseframe&#45;&gt;module~voro</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M344.93,-101.87C331.77,-85.48 306.95,-55.72 283,-33 282.21,-32.25 281.4,-31.5 280.57,-30.76"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="282.75,-28.02 272.86,-24.22 278.22,-33.35 282.75,-28.02"/>
+</g>
+<!-- module~atomics&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge8" class="edge">
+<title>module~atomics&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#ffff00" stroke-dasharray="5,2" d="M248.81,-189.08C236.17,-213.94 203.57,-267.82 162,-259"/>
+<path fill="none" stroke="#ffff00" stroke-dasharray="5,2" d="M160,-259C107.79,-247.93 72.78,-188.73 57.21,-156.3"/>
+<polygon fill="#ffff00" stroke="#ffff00" points="60.37,-154.79 53.01,-147.17 54.01,-157.72 60.37,-154.79"/>
+</g>
+<!-- String -->
+<g id="module~~baseframe~~UsesGraph_node9" class="node">
+<title>String</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="188,-231 134,-231 134,-207 188,-207 188,-231"/>
+<text text-anchor="middle" x="161" y="-216.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">String</text>
+</g>
+<!-- module~atomics&#45;&gt;String -->
+<g id="module~~baseframe~~UsesGraph_edge7" class="edge">
+<title>module~atomics&#45;&gt;String</title>
+<path fill="none" stroke="#ffff00" stroke-dasharray="5,2" d="M227.75,-189.15C218.28,-193.44 207.49,-198.35 197.42,-202.92"/>
+<polygon fill="#ffff00" stroke="#ffff00" points="195.72,-199.85 188.06,-207.17 198.61,-206.22 195.72,-199.85"/>
+</g>
+<!-- module~position -->
+<g id="module~~baseframe~~UsesGraph_node10" class="node">
+<title>module~position</title>
+<g id="a_module~~baseframe~~UsesGraph_node10"><a xlink:href="../module/position.html" xlink:title="Position">
+<polygon fill="#337ab7" stroke="#337ab7" points="188,-189 134,-189 134,-165 188,-165 188,-189"/>
+<text text-anchor="middle" x="161" y="-174.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Position</text>
+</a>
+</g>
+</g>
+<!-- module~atomics&#45;&gt;module~position -->
+<g id="module~~baseframe~~UsesGraph_edge9" class="edge">
+<title>module~atomics&#45;&gt;module~position</title>
+<path fill="none" stroke="#ffff00" stroke-dasharray="5,2" d="M227.75,-177C218.58,-177 208.16,-177 198.36,-177"/>
+<polygon fill="#ffff00" stroke="#ffff00" points="198.06,-173.5 188.06,-177 198.06,-180.5 198.06,-173.5"/>
+</g>
+<!-- module~type -->
+<g id="module~~baseframe~~UsesGraph_node11" class="node">
+<title>module~type</title>
+<g id="a_module~~baseframe~~UsesGraph_node11"><a xlink:href="../module/type.html" xlink:title="Type">
+<polygon fill="#337ab7" stroke="#337ab7" points="188,-147 134,-147 134,-123 188,-123 188,-147"/>
+<text text-anchor="middle" x="161" y="-132.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Type</text>
+</a>
+</g>
+</g>
+<!-- module~atomics&#45;&gt;module~type -->
+<g id="module~~baseframe~~UsesGraph_edge10" class="edge">
+<title>module~atomics&#45;&gt;module~type</title>
+<path fill="none" stroke="#ffff00" stroke-dasharray="5,2" d="M227.75,-164.85C218.28,-160.56 207.49,-155.65 197.42,-151.08"/>
+<polygon fill="#ffff00" stroke="#ffff00" points="198.61,-147.78 188.06,-146.83 195.72,-154.15 198.61,-147.78"/>
+</g>
+<!-- module~bondings&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge11" class="edge">
+<title>module~bondings&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M129.99,-104.26C117.58,-108.91 102.98,-114.38 89.57,-119.41"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="88.19,-116.19 80.06,-122.98 90.65,-122.74 88.19,-116.19"/>
+</g>
+<!-- module~box&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge12" class="edge">
+<title>module~box&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#0000ff" stroke-dasharray="5,2" d="M228.22,-48.1C209.04,-45.1 182.86,-43.78 162,-53"/>
+</g>
+<!-- module~voro&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge14" class="edge">
+<title>module~voro&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#ff00ff" stroke-dasharray="5,2" d="M228.19,-23.68C209.68,-31.89 184.33,-43.13 162,-53"/>
+<path fill="none" stroke="#ff00ff" stroke-dasharray="5,2" d="M160,-53C124.43,-68.72 89.19,-97.21 68.01,-116.12"/>
+<polygon fill="#ff00ff" stroke="#ff00ff" points="65.65,-113.53 60.61,-122.85 70.36,-118.71 65.65,-113.53"/>
+</g>
+<!-- Paths -->
+<g id="module~~baseframe~~UsesGraph_node8" class="node">
+<title>Paths</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="188,-24 134,-24 134,0 188,0 188,-24"/>
+<text text-anchor="middle" x="161" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Paths</text>
+</g>
+<!-- module~voro&#45;&gt;Paths -->
+<g id="module~~baseframe~~UsesGraph_edge13" class="edge">
+<title>module~voro&#45;&gt;Paths</title>
+<path fill="none" stroke="#ff00ff" stroke-dasharray="5,2" d="M228.24,-12C218.89,-12 208.18,-12 198.14,-12"/>
+<polygon fill="#ff00ff" stroke="#ff00ff" points="198,-8.5 188,-12 198,-15.5 198,-8.5"/>
+</g>
+<!-- module~position&#45;&gt;iso_fortran_env -->
+<g id="module~~baseframe~~UsesGraph_edge15" class="edge">
+<title>module~position&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#00ffff" stroke-dasharray="5,2" d="M133.74,-167.15C120.59,-162.22 104.35,-156.13 89.56,-150.58"/>
+<polygon fill="#00ffff" stroke="#00ffff" points="90.68,-147.27 80.09,-147.03 88.22,-153.82 90.68,-147.27"/>
+</g>
+</g>
+</svg>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#UsesGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="UsesGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+          <div class="card">
+      <h3 class="card-header card-title bg-light">Used by</h3>
+      <div class="card-body">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: module~~baseframe~~UsedByGraph Pages: 1 -->
+<svg id="modulebaseframeUsedByGraph" width="171pt" height="32pt"
+ viewBox="0.00 0.00 171.00 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~baseframe~~UsedByGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>module~~baseframe~~UsedByGraph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 167,-28 167,4 -4,4"/>
+<!-- module~baseframe -->
+<g id="module~~baseframe~~UsedByGraph_node1" class="node">
+<title>module~baseframe</title>
+<polygon fill="none" stroke="black" points="73,-24 0,-24 0,0 73,0 73,-24"/>
+<text text-anchor="middle" x="36.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">BaseFrame</text>
+</g>
+<!-- module~frames -->
+<g id="module~~baseframe~~UsedByGraph_node2" class="node">
+<title>module~frames</title>
+<g id="a_module~~baseframe~~UsedByGraph_node2"><a xlink:href="../module/frames.html" xlink:title="Frames">
+<polygon fill="#337ab7" stroke="#337ab7" points="163,-24 109,-24 109,0 163,0 163,-24"/>
+<text text-anchor="middle" x="136" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Frames</text>
+</a>
+</g>
+</g>
+<!-- module~frames&#45;&gt;module~baseframe -->
+<g id="module~~baseframe~~UsedByGraph_edge1" class="edge">
+<title>module~frames&#45;&gt;module~baseframe</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M108.87,-12C101.01,-12 92.13,-12 83.38,-12"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="83.23,-8.5 73.23,-12 83.23,-15.5 83.23,-8.5"/>
+</g>
+</g>
+</svg>
+</div>          <div>
+            <a type="button" class="graph-help" data-bs-toggle="modal" href="#UsedByGraph-help-text">Help</a>
+          </div>
+          <div class="modal fade" id="UsedByGraph-help-text" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+<p>Nodes of different colours represent the following: </p>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: Graph Key Pages: 1 -->
+<svg width="518pt" height="32pt"
+ viewBox="0.00 0.00 517.50 32.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 28)">
+<title>Graph Key</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-28 513.5,-28 513.5,4 -4,4"/>
+<!-- Module -->
+<g id="node1" class="node">
+<title>Module</title>
+<polygon fill="#337ab7" stroke="#337ab7" points="54,-24 0,-24 0,0 54,0 54,-24"/>
+<text text-anchor="middle" x="27" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Module</text>
+</g>
+<!-- Submodule -->
+<g id="node2" class="node">
+<title>Submodule</title>
+<polygon fill="#5bc0de" stroke="#5bc0de" points="145.5,-24 72.5,-24 72.5,0 145.5,0 145.5,-24"/>
+<text text-anchor="middle" x="109" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Submodule</text>
+</g>
+<!-- Subroutine -->
+<g id="node3" class="node">
+<title>Subroutine</title>
+<polygon fill="#d9534f" stroke="#d9534f" points="234,-24 164,-24 164,0 234,0 234,-24"/>
+<text text-anchor="middle" x="199" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
+</g>
+<!-- Function -->
+<g id="node4" class="node">
+<title>Function</title>
+<polygon fill="#d94e8f" stroke="#d94e8f" points="310,-24 252,-24 252,0 310,0 310,-24"/>
+<text text-anchor="middle" x="281" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
+</g>
+<!-- Program -->
+<g id="node5" class="node">
+<title>Program</title>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="386,-24 328,-24 328,0 386,0 386,-24"/>
+<text text-anchor="middle" x="357" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
+</g>
+<!-- This Page&#39;s Entity -->
+<g id="node6" class="node">
+<title>This Page&#39;s Entity</title>
+<polygon fill="none" stroke="black" points="509.5,-24 404.5,-24 404.5,0 509.5,0 509.5,-24"/>
+<text text-anchor="middle" x="457" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
+</g>
+</g>
+</svg>
+
+<p>Solid arrows point from a submodule to the (sub)module which it is
+descended from. Dashed arrows point from a module or program unit to 
+modules which it uses.
+</p>
+ Where possible, edges connecting nodes are
+given different colours to make them easier to distinguish in
+large graphs.</div>
+            </div>
+          </div>
+        </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+      <br>
+
+
+        <section>
+          <h2>Variables</h2>
+            <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_rmax"></span>
+              real(kind=real64),
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>default_rmax</strong></td>
+<td> =</td>
+                <td>15._real64</td>
+            <td>
+                <p>default value for the range of <script type="math/tex">r</script> part: rmax = 15.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_nr"></span>
+              integer,
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>default_nr</strong></td>
+<td> =</td>
+                <td>300</td>
+            <td>
+                <p>default value for the number of <script type="math/tex">r</script> points: nr = 300</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_ntheta"></span>
+              integer,
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>default_ntheta</strong></td>
+<td> =</td>
+                <td>100</td>
+            <td>
+                <p>default value for the number of <script type="math/tex">\vartheta</script> points: ntheta = 100</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-default_nphi"></span>
+              integer,
+            </td>
+              <td>public,</td>
+            <td>
+parameter               
+            </td>
+            <td>::</td>
+            <td><strong>default_nphi</strong></td>
+<td> =</td>
+                <td>200</td>
+            <td>
+                <p>default value for the number of <script type="math/tex">\varphi</script> points: nphi = 200</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+        </section>
+        <br>
+
+
+        <section>
+          <h2>Interfaces</h2>
+              <div class="card">
+    <div class="card-header bg-light codesum">
+      <span class="anchor" id="interface-read_voroindex"></span>
+      <h3>        interface
+      </h3>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+              <h3>
+    public module function read_voroindex(fvoroindex) result(voroindex)  
+
+    </h3>
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-fvoroindex~3"></span>
+              character(len=*),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>fvoroindex</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    <h4>
+    Return Value
+    <small>integer, allocatable, dimension(:, :)</small>
+    </h4>
+    
+
+        </li>
+    </ul>
+  </div>
+
+        </section>
+        <br>
+
+
+        <section>
+          <h2>Derived Types</h2>
+              <div class="card">
+    <div class="card-header codesum">
+      <span class="anchor" id="type-baseframehandler"></span>
+      <h3>
+        type, public, extends(<a href='../type/basehandler.html'>BaseHandler</a>)&nbsp;::&nbsp;
+        <a href='../type/baseframehandler.html'>BaseFrameHandler</a>
+        
+      </h3>
+    </div>
+    <div class="card-body">
+      <p>Manage all infomation relating to a configuration.</p>
+
+        <h4>Components</h4>
+          <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Visibility</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-box"></span>
+              type(<a href='../type/boxhandler.html'>BoxHandler</a>),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>box</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+<p>The box information of the configuration</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-atomics"></span>
+              type(<a href='../type/atomicshandler.html'>AtomicsHandler</a>),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>atomics</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+<p>The atomics information of the configuration</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-bondings"></span>
+              type(<a href='../type/bondingshandler.html'>BondingsHandler</a>),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>bondings</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+<p>The bonding topology information in the configuration</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-voro"></span>
+              type(<a href='../type/vorohandler.html'>VoroHandler</a>),
+            </td>
+              <td>public</td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>voro</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+<p>The Voronoi tessellation information in the configuration</p>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+
+        <h4>Type-Bound Procedures</h4>
+        <table class="table table-striped varlist">
+          <tbody>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-checkbase'>checkBase</a></strong></td>
+                  <td><p>check and return the validness of Base:
+true if natoms &gt; 0 and ndim &gt; 0, otherwise false.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-setbase_from_file'>setBase_from_file</a></strong></td>
+                  <td><p>set full Base members from a file in dump format.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-setndim'>setndim</a></strong></td>
+                  <td><p>set the spatial dimension manually</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-settimestep'>settimestep</a></strong></td>
+                  <td><p>set the timestep manually</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-setnatoms'>setnatoms</a></strong></td>
+                  <td><p>set the number of atoms manually</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-getndim'>getndim</a></strong></td>
+                  <td><p>get the spatial dimension</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-gettimestep'>gettimestep</a></strong></td>
+                  <td><p>get the timestep</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-getnatoms'>getnatoms</a></strong></td>
+                  <td><p>get the number of atoms</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/basehandler.html#boundprocedure-writebase'>writeBase</a></strong></td>
+                  <td><p>write full Base information into stdout.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-allocbaseframe'>allocBaseFrame</a></strong></td>
+                  <td><p>reallocate the box, atomics.</p></td>
+              </tr>
+              <tr>
+                <td>  generic, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-setbondings'>setBondings</a></strong> => <a href='/home/runner/work/lammps-parser/lammps-parser/doc/type/baseframehandler.html#boundprocedure-setbondings_voro'>setBondings_voro</a>, <a href='/home/runner/work/lammps-parser/lammps-parser/doc/type/baseframehandler.html#boundprocedure-setbondings_cutoff'>setBondings_cutoff</a></td>
+                  <td><p>set the bondings by two ways: Voronoi, or distance cutoff.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-setbondings_voro'>setBondings_voro</a></strong></td>
+                  <td><p>set the bondings by Voronoi tessellation.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-setbondings_cutoff'>setBondings_cutoff</a></strong></td>
+                  <td><p>set the bondings by distance cutoff.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-readbaseframe'>readBaseFrame</a></strong></td>
+                  <td><p>read BaseFrame information from a file in dump format.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-writebaseframe'>writeBaseFrame</a></strong></td>
+                  <td><p>write full BaseFrame information into stdout.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_voro_input'>gen_voro_input</a></strong></td>
+                  <td><p>generate a configuration file read by voro++ package.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_nv'>gen_nv</a></strong></td>
+                  <td><p>generate a file containing the number of vertices in the Voronoi
+cell for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_vpos'>gen_vpos</a></strong></td>
+                  <td><p>generate a file containing the positions of vertices relative to
+the atom center in the Voronoi cell for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_z'>gen_Z</a></strong></td>
+                  <td><p>generate a file containing the coordination number of each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_fv'>gen_fv</a></strong></td>
+                  <td><p>generate a file containing the id of vertices that make up each
+face in the Voronoi cell for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-gen_voroindex'>gen_voroindex</a></strong></td>
+                  <td><p>generate a file containing Voronoi index information for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_anisotropy'>get_anisotropy</a></strong></td>
+                  <td><p>get the anisotropy parameter <script type="math/tex">k</script> and the direction of major axis
+of the Voronoi cell for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_loc_pack_capability_3d'>get_loc_pack_capability_3d</a></strong></td>
+                  <td><p>get the 3d local packing capability <script type="math/tex">\Theta</script> for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr'>get_gr</a></strong></td>
+                  <td><p>get the global g(r) with scalar variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_grsep'>get_grsep</a></strong></td>
+                  <td><p>get the partial g(r) with scalar variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr_i'>get_gr_i</a></strong></td>
+                  <td><p>get the global g(r) of a fixed center atom i with scalar variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_grsep_i'>get_grsep_i</a></strong></td>
+                  <td><p>get the partial g(r) of a fixed center atom i with scalar variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr3'>get_gr3</a></strong></td>
+                  <td><p>get the global g(r) with vector variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr3sep'>get_gr3sep</a></strong></td>
+                  <td><p>get the partial g(r) with vector variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr3_i'>get_gr3_i</a></strong></td>
+                  <td><p>get the global g(r) of a fixed center atom i with vector variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_gr3sep_i'>get_gr3sep_i</a></strong></td>
+                  <td><p>get the partial g(r) of a fixed center atom i with vector variable.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_loc_s2'>get_loc_s2</a></strong></td>
+                  <td><p>get the local <script type="math/tex">S_2</script> for each atom in the configuration.</p><a href="../type/baseframehandler.html#boundprocedure-get_loc_s2" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_qlm'>get_qlm</a></strong></td>
+                  <td><p>get the vector <script type="math/tex"> (q_{l,-l}, ... q_{l,0}, ... q_{l,l}) \in \mathbb{C}^{2l+1} </script> for each atom.</p><a href="../type/baseframehandler.html#boundprocedure-get_qlm" class="pull-right"><emph>Read more&hellip;</emph></a></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_ql'>get_ql</a></strong></td>
+                  <td><p>get the bond orientational order (BOO) <script type="math/tex">q_l</script> for each atom.</p></td>
+              </tr>
+              <tr>
+                <td>  procedure, public ::
+  <strong><a href='../type/baseframehandler.html#boundprocedure-get_qlc'>get_qlc</a></strong></td>
+                  <td><p>get the coarse grained bond orientational order (BOO) <script type="math/tex">\bar{q_l}</script> for each atom.</p></td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+        </section>
+        <br>
+
+
+
+
+
+    </div>
+  </div>
+
+      <hr>
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col">
+            <p>
+              lammps-parser
+ was developed by YiMing Du<br>              &copy; 2026 
+</p>
+          </div>
+          <div class="col">
+            <p class="text-end">
+              Documentation generated by
+              <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div> <!-- /container -->
+    </footer>
+  </body>
+</html>
